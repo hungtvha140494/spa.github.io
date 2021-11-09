@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hermes Spa</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<style >
+  
+
+a
+{
+  font-size: 120%;
+  color: black;
+  font-family: 'Inter', sans-serif;
+}
+
+
+{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+#bottomreadmore {
+  width: 510px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#bottomreadmore:hover {
+  background: #ddd;
+  color: black;
+}
+
+#bottomsend {
+  width: 210px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+#bottomsend:hover {
+  background: grey;
+  color: black;
+}
+
+
+.text-block {
+  position: relative;
+  bottom: 20px;
+  padding: 0.5px;
+  width: 255px;
+  background-color: #e366ab;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+input[type=text], select, textarea {
+  width: 400px;
+  height: 48px;
+  padding: 12px;
+
+}
+
+ .footer {
+    position:  sticky;
+    left: 0;
+    bottim: 0;
+    width: 100%;
+    background-color: black;
+    color: ghostwhite;
+    text-align: center;
+  }
+
+
+
+  {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+img {
+  margin-bottom: -4px;
+}
+
+
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(22, 22, 22, 22);
+}
+
+
+
+
+</style>
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-light navbar-light">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="Home.html">
+    <img src="code img/1.png" style="width:80px; padding-left: 20px;">
+  </a>
+  
+  <!-- Links -->
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a style="padding-right: 60px;" class="nav-link" href="Services.html">Services</a>
+    </li>
+    <li class="nav-item">
+      <a style="padding-right:60px" class="nav-link" href="About us.html">About us</a>
+    </li>
+    <li class="nav-item">
+      <a style="padding-right:60px" class="nav-link" href=".html">Contact</a>
+    </li>
+  </ul>
+</nav>
+
+
+
+<video autoplay muted loop id="2">
+  <source src="code img/2.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <h1 style="font-family: 'Dancing Script', cursive;font-size: 80px;">Hermes Spa</h1>
+  <p>With excellent services and professionalism of the staff at Hermes Spa. Let us take care of your beauty.</p>
+  <button id="myBtn" onclick="myFunction()">Booking</button>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container">
+
+    <div class="row">
+
+      <div class="column">
+        <a href="Services.html">
+          
+    <img src="code img/2.png" style="width:255px;height:230px " onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  
+         
+         <div class="text-block">
+          <h5 style="text-align: center;" >Face</h5>
+           
+         </div>
+         
+      
+        </a>
+        </div>
+
+
+
+      <div class="column">
+        <a href="Services.html">
+          
+    <img src="code img/3.png" style="width:255px;height:230px " onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  
+         
+         <div class="text-block">
+          <h5 style="text-align: center;" >Skin</h5>
+           
+         </div>
+         
+      
+        </a>
+        </div>
+
+     <div class="column">
+        <a href="Services.html">
+          
+    <img src="code img/4.jpg" style="width:255px;height:230px " onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  
+         
+         <div class="text-block">
+          <h5 style="text-align: center;" >White bath</h5>
+           
+         </div>
+         
+      
+        </a>
+        </div>
+
+
+      <div class="column">
+        <a href="Services.html">
+          
+    <img src="code img/5.png" style="width:255px;height:230px " onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  
+         
+         <div class="text-block">
+          <h5 style="text-align: center;" >Steam</h5>
+           
+         </div>
+         
+      
+        </a>
+        </div>
+    </div>
+  </div> 
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<div class="container">
+
+  <div class="row">
+
+    <div class="col">
+      <img src="code img/6.png" style="width:570px; height:436px">
+      
+    </div>
+
+    <div class="col">
+      <h3 style="font-family: 'Rubik', sans-serif;, sans-serif; font-size: 46px;">
+        Welcome to Hermes Spa
+      </h3>
+      <p style="font-family: 'Inter', sans-serif;font-size: 15px; padding-top: 50px;">
+        We are proud to be a prestigious and healthy massage spa. Hermes Spa is a place to help you immerse yourself in relaxation and regain the potential and strong vitality inherent from nature. Coming to Hermes Spa, all the pressure and fatigue are dispelled, we have relaxation solutions for good health & spirit suitable for everyone. In addition, Hermes Spa provides translation packages for members to experience relaxing massage moments in a warm space.
+      </p>
+      <br>
+      <br>
+      <button id="bottomreadmore" onclick="myFunction()">
+        Read more
+      </button>
+      
+    </div>
+    
+  </div>
+  
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="footer">
+  
+  <a class="navbar-brand" href="Home.html">
+    <img src="code img/1.png" style="width:10%; padding-left: 20px;">
+  </a>
+
+  <br>
+  <h7>Subscribe to our mailing list to receive updates and promotional offers</h7>
+  
+  <br>
+  <br>
+  <form action="/action_page.php">
+    
+    <input type="text" id="fname" name="firstname" placeholder="Your email  ">
+  <button id="bottomsend" onclick="myFunction()">
+        Send
+      </button>
+          <br>
+      <br>
+  <h8>Hermes Spa Copyright 2021. All rights reserved</h8>
+<br>
+<br>
+<br>
+</div>    
+
+
+</body>
+</html>
+
+
